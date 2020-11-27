@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+	<title>Health Benefits 1</title>
+	<link rel="stylesheet" type="text/css" href="../styles/health.css">
+
+	  <!--Web Manifest-->
+  	<link rel="apple-touch-icon" sizes="180x180" href="../appimages/apple-touch-icon.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="../appimages/favicon-32x32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="../appimages/favicon-16x16.png">
+  	<link rel="manifest" href="../manifest.json"> 
+  	<link rel="shortcut icon" href="../appimages/favicon.ico">
+  	<meta name="msapplication-TileColor" content="#2b5797">
+  	<meta name="msapplication-config" content="../appimages/browserconfig.xml">
+  	<meta name="theme-color" content="#163659">
+</head>
+<body>
+		<div class="info">
+		<div class="container">
+			<div class="heading">
+				<h2>Drinking tea may improve your health — here's what to try</h2>	
+			</div>
+			<div class="health1">
+				<h3>1. Tea contains antioxidants.</h3>
+				<p>Antioxidants work to prevent the body’s version of rust and thus help to keep us young and protect us from damage from pollution. <br>Load up on antioxidants with a white tea, which is less processed than black or green tea so it retains more beneficial antioxidants.</p>
+			</div>
+
+			<div class="health2">
+				<h3>2. Tea has less caffeine than coffee.</h3>
+				<p>Herbal blends have no caffeine, while traditional teas have less than 50% of what typically is found in coffee. <br>That means you can consume it without those pesky effects on your nervous system, says Leslie Bonci, nutritionist and <br>owner of Active Eating Advice. If you're trying to switch from coffee to tea, try a chicory root tea like Teeccino, which has<br> a mouth feel and flavor similar to coffee. Chicory root is also known to help reduce stress and is a prebiotic so may <br>be helpful to your gut.</p>
+			</div>
+
+			<div class="health3">
+				<h3>3. Tea may reduce your risk of heart attack and stroke</h3>
+				<p>A study published in 2016 that combined data from a host of earlier reports found a nearly 20% reduction in the <br>risk of heart attack and a 35% reduced risk of stroke among those who drank one to three cups of green tea a day. Those who drank<br> four or more cups of green tea daily had a 32% reduction in the risk of having a heart attack and lower levels of<br> LDL cholesterol.</p>
+			</div>
+
+			<div class="health4">
+				<h3>4. Tea may keep your smile bright</h3>
+				<p>“Japanese researchers have found that tea can decrease tooth loss,” Ardine said. “It changes the pH in your<br> mouth when you drink it and that may be what prevents cavities.” Beyond that, tea, unlike many other beverages does not appear<br> to erode tooth enamel, Bonci said.</p>
+			</div>
+
+			<div class="health5">
+				<h3>5. Tea may boost the immune system</h3>
+				<p>Studies have shown tea can tune up immune cells so they reach their targets quicker. Holy basil or tulsi tea has <br>been used by Ayurvedic practitioners for centuries to help keep the immune system strong after injuries or illnesses thanks<br> to its antibacterial, anti-fungal and anti-inflammatory properties.</p>
+			</div>
+		</div>	
+	</div>
+
+	
+<div class="benefits-img-container">
+	<img src="../images/tea-benefit2.webp" alt="Tea Pot Image" id="benefits-img">
+</div>
+
+<div class="end-section">
+	<div class="back-link">
+		<a href="manufacturers.html">Previous Page</a>
+	</div>
+
+	<div class="benefits-btn">
+		<a href="Index.html" class="btn">Back Home</a>
+	</div>
+</div>
+
+
+<footer>
+    <div class="footer-sec-1"> 
+        <h3>Ceylon Tea</h3>
+    </div>    
+
+    <div class="footer-sec-2">
+      <img src="../images/company.png" alt="Building-clipart Image">
+      <p> Find and brew the the perfect cup of tea<br> with us using the world's finest;<br> Ceylon tea.</p>
+    </div>
+
+    <div class="footer-sec-3">
+      <img src="../images/location.png" alt="Location-clipart Image">
+      <p>No 90/1 B Sookiriwatta,<br>Miriswatta Gampaha,<br>Sri Lanka</p>
+    </div>
+
+      <div class="footer-sec-4">    
+       <div class="social-icn"><img src="../images/fb-icn.png" alt="facebook icon"></div>
+       <div class="social-icn"><img src="../images/twitter-icn.png" alt="twitter icon"></div> 
+       <div class="social-icn"><img src="../images/insta-icn.png" alt="instagram icon"></div>       
+       <div class="social-icn"><img src="../images/youtube-icn.png" alt="youtube icon"></div> 
+       </div> 
+</footer>
+<p id="design">Designed by Kavisha Withana</p>
+        
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful', 
+                                 registration);
+                }, 
+                function(err) {
+                    console.log('Service worker registration failed', err);
+            });
+        });
+    }
+  </script>
+
+</body>
+</html>

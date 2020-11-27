@@ -1,0 +1,293 @@
+body{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;	
+  	width: 100%;
+
+}
+
+.heading{
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	background: url(../images/healthBg.webp) 50% 50% no-repeat;
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+	border-radius: 50%;
+
+}
+.heading h2{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 55px;
+	padding: 20%;
+	padding-top: 75%;
+	color:white;
+}
+
+.health1,.health2,.health3,.health4,.health5{
+	text-align: center;
+	padding: 2.5%;
+	font-size:20px;
+}
+.health1 h3,.health2 h3,.health3 h3,.health4 h3,.health5 h3{
+	
+	font-size:30px;
+}
+.info{
+	background: url(../images/leaves3.png);
+}
+
+.benefits{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5rem;
+	padding: 5%;
+	padding-bottom: 2%;
+	font-family: cursive;
+}
+.benefits-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	padding-bottom: 5%;
+}
+.btn {
+  background-color: green; 
+  border: none;
+  color: black;
+  border: 2px solid #4CAF50; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ 
+}
+
+#benefits-img{
+	transition: 0.2s ease-in;
+}
+
+#benefits-img{
+	height: 25rem;
+	width: auto;
+	padding-bottom: 5rem;
+}
+.benefits-img-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.back-link{
+	font-size: 8px;
+	text-align: center;
+	padding: 3%;
+	transition: 0.3s ease-in;
+}
+
+/*+++++++++++++++++++++++++++++++ Footer Styles ++++++++++++++++++++++++*/
+
+footer{
+  background-image: linear-gradient(to right, rgba(33,147,176,0.7), rgba(109,213,237,0.7));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#design{
+  text-align: center;
+  padding: 0;
+  margin:0;
+  background-image: linear-gradient(to right,rgba(109,213,237,0.7), rgba(33,147,176,0.7));
+  color: white;
+}
+
+
+.footer-sec-1 h3{
+  font-size: 8rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.footer-sec-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.footer-sec-3 p{
+  font-size: 3rem;
+  text-align: center;
+}
+.footer-sec-3 img{
+  height: 5rem;
+}
+
+.footer-sec-2{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.footer-sec-2 p{
+  font-size: 3rem;
+  text-align: center;
+}
+.footer-sec-2 img{
+  height: 5rem;
+}
+.footer-sec-4{
+  padding-top: 5rem;
+  display: flex;
+}
+.social-icn img{
+  width: 5rem;
+  padding: 2rem;
+  padding-bottom: 5rem;
+}
+
+
+
+@media (min-width: 1024px) {
+
+.benefits{
+font-size: 1.5rem;
+font-family: unset;
+
+}
+
+.btn {
+  background-color: white; 
+  transition: all 0.2s ease-in;
+}
+.btn:hover{
+	background-color: #4CAF50;
+	color: white;
+}
+
+.heading{
+	text-align: center;
+	width: 50%;
+	height: 100vh;
+	background: url(../images/healthBg.webp) no-repeat;
+	background-size: cover;
+	display: table;
+	background-attachment: fixed;
+	border-radius: 50%;
+	margin-left: 25%;
+	padding-top: 10%;
+
+
+}
+.heading h2{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 55px;
+	padding: 20%;
+	color:white;
+}
+.health1,.health5,.health3,.health2{
+	text-align: left;
+	padding: 2.5%;
+	font-size:20px;
+}
+.health4{
+	text-align: left;
+}
+.health1 h3,.health2 h3,.health3 h3,.health4 h3,.health5 h3{
+	font-size:30px;
+}
+#benefits-img:hover{
+	
+	filter: drop-shadow(15px 15px #CEC5C3);
+
+}
+
+.info{
+	background: url(../images/leaves3.png);
+	display: flex;
+	justify-content: center;
+}
+
+.back-link:hover{
+	font-size: 18px;
+}
+.benefits-img-container{
+	justify-content: flex-end;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+
+
+}
+.footer-sec-1 h3{
+  font-size: 7rem;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+
+.footer-sec-3{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
+}
+.footer-sec-3 p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer-sec-3 img{
+  height: 3rem;
+}
+
+.footer-sec-2{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.footer-sec-2 p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer-sec-2 img{
+  height: 3rem;
+}
+.footer-sec-4{
+  padding-top: 5rem;
+  display: flex;
+  
+}
+.social-icn img{
+  width: 2.5rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+
+.back-link{
+	font-size: 16px;
+	text-align: center;
+	padding: 3%;
+	transition: 0.3s ease-in;
+}
+
+  }
+

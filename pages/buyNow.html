@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Buy Ceylon Tea</title>
+	<link rel="stylesheet" type="text/css" href="../styles/buyNow.css">
+	
+  <!--google font-->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+    <!--Web Manifest-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../appimages/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../appimages/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../appimages/favicon-16x16.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="shortcut icon" href="../appimages/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="../appimages/browserconfig.xml">
+  <meta name="theme-color" content="#163659">
+
+</head>
+<body>
+	<header>
+	<div class="container">
+		<div id="hide-mobile">
+			<ul id="nav">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="typesOfTea.html">Tea Types</a></li>
+				<li><a href="manufacturers.html">Sri Lankan Manufacturers</a></li>
+				<li><a href="buyNow.html">Buy Now</a></li>
+				<li><a href="contact.html">Contact US</a></li>
+			</ul>
+		  <h1 id="heading">Order your Favorutie Cup of tea</h1>  
+		</div>
+
+		    <div id="mySidenav" class="sidenav">
+		      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		      <a href="#" id="menu-name">Menu</a>
+		      <a href="Index.html">Home</a>
+		      <a href="typesOfTea.html">Tea Types</a>
+		      <a href="manufacturers.html">Manufacturers</a>
+		      <a href="buyNow.html">Buy Now</a>
+		      <a href="contact.html">Contact US</a>
+		    </div>
+		    <span onclick="openNav()"><img src="../images/menu-icon.png" id="menu-btn" alt="Menu-icon"></span>		    
+	</div>
+	</header>
+
+<div class="section-two">
+	<h1>Buy Now</h1>
+</div>
+
+<div class="order-content">
+	<div class="order-box">
+		<h1>Place your Order</h1>
+		<div class="box">
+
+
+			<div class="option1">
+			<h3>Manufacturer</h3>
+			<select name="manufac" id="manufacturers">
+  				<option value="dilma">Dilma</option>
+  				<option value="jones">Jones</option>
+  				<option value="george_steuart">George Steuart</option>
+  				<option value="malwatte_valley_plantations">Malwatte valley plantations</option>
+  				<option value="prestige_cylon_teas">Prestige Ceylon teas</option>
+  				<option value="empire_teas">Empire teas</option>
+			</select>
+			</div>
+
+			<div class="option2">
+			<h3>Size</h3>
+			<select name="size" id="size">
+  				<option value="small">Small</option>
+  				<option value="medium" selected>Medium</option>
+  				<option value="large">Large</option>
+			</select>
+			</div>
+
+			<div class="option3">
+			<h3>Packaging</h3>
+			<select name="packaging" id="packaging">
+  				<option value="pouch">Paper Pouches</option>
+  				<option value="tins" selected>Tins</option>
+  				<option value="bags">Bags</option>
+			</select>
+			</div>
+		</div>
+
+		<div class="extras-box">
+		<h3>Extras(Optional)</h3>
+			<div class="extra-items">
+				<div class="ext1">
+					<label>Mug</label>
+					<input type="checkbox" name="extra" value="mug" class="extItem">
+				</div>	
+
+				<div class="ext2">
+					<label>Silver Pin</label>
+					<input type="checkbox" name="extra" value="silver_pin" class="extItem"> 
+				</div>
+				<div class="ext3">
+					<label>Wooden Souvenir</label>
+					<input type="checkbox" name="extra" value="wooden_souvenir" class="extItem"> 
+				</div>
+			</div>
+		</div>
+
+		<div class="btn-class">
+			<button id="addToOrderBTN" onclick="orderProcess.addToCart()">Add to Order</button>
+			<button id="addToFav" onclick="orderProcess.addToFavourite()">Add Favourite</button>
+			<button id="orderFav" onclick="orderProcess.orderFavourite()">Order Favourite</button>
+			<button id="checkLoyalty" onclick="orderProcess.checkLoyalty()">Check Loyalty</button>
+			<button id="placeOrderBTN" onclick="orderProcess.placeOrder()">Place Order</button>
+		</div>
+	</div>
+	<hr>
+
+
+
+
+
+	<div id='cart'>
+		<table id="overallOrder">
+			<caption>Total Order</caption>
+			<thead>
+				<tr>
+					<th>Product Name</th>
+					<th>Size</th>
+					<th>Packaging</th>
+					<th>Extras</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody id="table-data">
+			</tbody>
+		</table>
+
+
+		<div id="loyalty">
+			
+			<h4>Customer Loyalty</h4>
+			<p id="oldPoints">0</p>
+			<p id="newPoints">0</p>
+			<p id="updatedPoints">0</p>
+			<p>(Add new items to the order and view updated Loyalty Points )</p>
+			<p><small><sup>*</sup>(If you have more than 4 orders in your total order, 20 Loyalty points will be awarded per order)</small><sup>*</sup></p>
+		</div>
+
+	</div>
+</div>
+
+
+<footer>
+
+    <div class="footer-sec-1"> 
+        <h3>Ceylon Tea</h3>
+    </div>    
+
+    <div class="footer-sec-2">
+      <img src="../images/company.png" alt="Building-clipart Image">
+      <p> Find and brew the the perfect cup of tea<br> with us using the world's finest;<br> Ceylon tea.</p>
+    </div>
+
+    <div class="footer-sec-3">
+      <img src="../images/location.png" alt="Location-clipart Image">
+      <p>No 90/1 B Sookiriwatta,<br>Miriswatta Gampaha,<br>Sri Lanka</p>
+    </div>
+
+   
+
+      <div class="footer-sec-4">    
+       <div class="social-icn"><img src="../images/fb-icn.png" alt="facebook icon"></div>
+       <div class="social-icn"><img src="../images/twitter-icn.png" alt="twitter icon"></div> 
+       <div class="social-icn"><img src="../images/insta-icn.png" alt="instagram icon"></div>       
+       <div class="social-icn"><img src="../images/youtube-icn.png" alt="youtube icon"></div> 
+       </div> 
+
+
+</footer>
+<p id="design">Designed by Kavisha Withana</p>
+        
+<script src="../scripts/buyNow.js"> </script>
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful', 
+                                 registration);
+                }, 
+                function(err) {
+                    console.log('Service worker registration failed', err);
+            });
+        });
+    }
+  </script>
+</body>
+</html>

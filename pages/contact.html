@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="../styles/contact.css">
+	<!--google font-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <!--Web Manifest-->
+  <link rel="apple-touch-icon" sizes="180x180" href="../appimages/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../appimages/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../appimages/favicon-16x16.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="shortcut icon" href="../appimages/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="../appimages/browserconfig.xml">
+  <meta name="theme-color" content="#163659">
+
+</head>
+<body>
+  <header>
+
+<div class="container">
+  
+
+
+
+<div id="hide-mobile">
+	<ul id="nav">
+		<li><a href="Index.html">Home</a></li>
+		<li><a href="typesOfTea.html">Tea Types</a></li>
+		<li><a href="manufacturers.html">Sri Lankan Manufacturers</a></li>
+		<li><a href="buyNow.html">Buy Now</a></li>
+		<li><a href="contact.html">Contact US</a></li>
+	</ul>
+    <h1 id="heading">Contact Us</h1>  
+</div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" id="menu-name">Menu</a>
+      <a href="Index.html">Home</a>
+      <a href="typesOfTea.html">Tea Types</a>
+      <a href="manufacturers.html">Manufacturers</a>
+      <a href="buyNow.html">Buy Now</a>
+      <a href="contact.html">Contact US</a>
+    </div>
+
+
+    <span onclick="openNav()"><img src="../images/menu-icon.png" alt="Menu Icon" id="menu-btn"></span>
+</div>  
+</header>
+
+<div class="section-two">
+  <h1>Contact Us</h1>
+  <p id="contactPara">We are happy to answer your questions and any other inquiry you may have. Fill out the form below and we'll be in touch with you as soon as possible</p>
+  </div>
+
+	<div class="contactForm">
+	<div class="contactContainer">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Us</h2>
+				<input type="text" class="textField" placeholder="Your Name">
+				<input type="email" class="textField" placeholder="Your Email">
+				<input type="text" class="textField" placeholder="Your Phone">
+				<textarea class="textField area" placeholder="Message"></textarea>
+				<button class="submitBTN">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+
+    <div class="footer-sec-1"> 
+        <h3>Ceylon Tea</h3>
+    </div>    
+
+    <div class="footer-sec-2">
+      <img src="../images/company.png" alt="Building-clipart Image">
+      <p> Find and brew the the perfect cup of tea<br> with us using the world's finest;<br> Ceylon tea.</p>
+    </div>
+
+    <div class="footer-sec-3">
+      <img src="../images/location.png" alt="Location-clipart Image">
+      <p>No 90/1 B Sookiriwatta,<br>Miriswatta Gampaha,<br>Sri Lanka</p>
+    </div>
+
+   
+
+      <div class="footer-sec-4">    
+       <div class="social-icn"><img src="../images/fb-icn.png" alt="facebook icon"></div>
+       <div class="social-icn"><img src="../images/twitter-icn.png" alt="twitter icon"></div> 
+       <div class="social-icn"><img src="../images/insta-icn.png" alt="instagram icon"></div>       
+       <div class="social-icn"><img src="../images/youtube-icn.png" alt="youtube icon"></div> 
+       </div> 
+
+
+</footer>
+<p id="design">Designed by Kavisha Withana</p>
+        
+<script src="../scripts/contact.js"> </script>
+
+<script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator) {
+        //wait until page loaded to avoid delaying rendering
+        window.addEventListener('load', function() {
+            //register service worker
+            navigator.serviceWorker.register('serviceworker.js').then(
+                function(registration) {
+                    console.log('Service worker registration successful', 
+                                 registration);
+                }, 
+                function(err) {
+                    console.log('Service worker registration failed', err);
+            });
+        });
+    }
+  </script>
+
+</body>
+</html>

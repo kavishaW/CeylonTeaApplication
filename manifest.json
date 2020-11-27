@@ -1,0 +1,23 @@
+{
+"name": "Ceylon Tea Style",
+ "short_name":"CeyonTea",
+ "start_url": "Index.html",
+ "description": "Ceylon Tea Web Appication's Web Manifest",
+ "lang":"en",
+ "orientation": "portrait-primary",
+ "icons": [
+ {
+ "src": "appimages/android-chrome-192x192.png",
+ "sizes": "192x192",
+ "type": "image/png"
+ },
+ {
+ "src": "appimages/android-chrome-512x512.png",
+ "sizes": "512x512",
+ "type": "image/png"
+ }
+ ],
+ "theme_color": "#163659",
+ "background_color": "#163659",
+ "display": "standalone" 
+}
